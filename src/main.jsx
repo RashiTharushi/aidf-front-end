@@ -21,7 +21,7 @@ const router=createBrowserRouter([
         element:<Homepage/>,
       },
       {
-        path:"/job:id",
+        path:"/job/:id",
         element:<Jobpage/>,
       },],
     },
@@ -36,9 +36,9 @@ const router=createBrowserRouter([
   ],
   },
 
-])
+]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router}/>
   </StrictMode>
-)
+);
